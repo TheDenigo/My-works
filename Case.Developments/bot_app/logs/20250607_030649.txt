@@ -1,0 +1,22 @@
+2025-06-07 03:06:59 - root - INFO - MAIN_APP_ENTRY: старт ботов…
+2025-06-07 03:06:59 - root - INFO - VKBot: инициализация…
+2025-06-07 03:06:59 - root - INFO - VKBot: инициализирован.
+2025-06-07 03:06:59 - root - INFO - VKBot: запускается (Long Poll)…
+2025-06-07 03:06:59 - root - INFO - MAIN_APP_ENTRY: VKBot запущен в потоке
+2025-06-07 03:06:59 - root - INFO - TelegramBot: инициализация…
+2025-06-07 03:06:59 - root - INFO - VKBot: Long Poll запущен. Ожидаем событий…
+2025-06-07 03:07:01 - root - INFO - TelegramBot: инициализирован, хендлеры добавлены.
+2025-06-07 03:07:01 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getMe "HTTP/1.1 200 OK"
+2025-06-07 03:07:01 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/deleteWebhook "HTTP/1.1 200 OK"
+2025-06-07 03:07:01 - telegram.ext.Application - INFO - Application started
+2025-06-07 03:07:11 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 03:07:21 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 03:07:26 - root - INFO - MAIN_APP_ENTRY: послан сигнал остановки TelegramBot
+2025-06-07 03:07:26 - root - INFO - MAIN_APP_ENTRY: послан сигнал остановки VKBot
+2025-06-07 03:07:26 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Application.shutdown() done, defined at C:\Users\denmi\AppData\Roaming\Python\Python312\site-packages\telegram\ext\_application.py:515> exception=RuntimeError('This Application is still running!')>
+Traceback (most recent call last):
+  File "C:\Users\denmi\AppData\Roaming\Python\Python312\site-packages\telegram\ext\_application.py", line 534, in shutdown
+    raise RuntimeError("This Application is still running!")
+RuntimeError: This Application is still running!
+2025-06-07 03:07:26 - root - INFO - VKBot: получен сигнал на остановку

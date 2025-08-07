@@ -1,0 +1,23 @@
+2025-06-07 05:04:19 - main - INFO - VKBot: инициализация…
+2025-06-07 05:04:19 - main - INFO - VKBot: инициализирован.
+2025-06-07 05:04:19 - main - INFO - VKBot: запускается (Long Poll)…
+2025-06-07 05:04:19 - main - INFO - MAIN_APP_ENTRY: VKBot запущен
+2025-06-07 05:04:19 - main - INFO - VKBot: Long Poll запущен. Ожидаем событий…
+2025-06-07 05:04:19 - main - INFO - TelegramBot: инициализация…
+2025-06-07 05:04:21 - main - INFO - TelegramBot: хендлеры зарегистрированы
+2025-06-07 05:04:21 - main - INFO - TelegramBot: стартуем свой asyncio-loop…
+2025-06-07 05:04:21 - main - INFO - MAIN_APP_ENTRY: TelegramBot запущен
+2025-06-07 05:04:21 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getMe "HTTP/1.1 200 OK"
+2025-06-07 05:04:21 - main - INFO - TelegramBot: polling запущен, входим в run_forever()
+2025-06-07 05:04:21 - telegram.ext.Application - INFO - Application started
+2025-06-07 05:04:21 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/deleteWebhook "HTTP/1.1 200 OK"
+2025-06-07 05:04:31 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 05:04:41 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 05:04:51 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 05:04:51 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 05:04:52 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/sendMessage "HTTP/1.1 200 OK"
+2025-06-07 05:04:56 - main - INFO - MAIN_APP_ENTRY: останавливаем TelegramBot
+2025-06-07 05:04:56 - main - INFO - TelegramBot: stop() called — останавливаем event loop
+2025-06-07 05:04:56 - main - INFO - MAIN_APP_ENTRY: останавливаем VKBot
+2025-06-07 05:04:56 - main - INFO - TelegramBot: loop остановлен, выполняем shutdown…
+2025-06-07 05:04:56 - main - INFO - VKBot: получен сигнал на остановку

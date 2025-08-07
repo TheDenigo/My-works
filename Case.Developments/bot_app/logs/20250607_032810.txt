@@ -1,0 +1,27 @@
+2025-06-07 03:28:56 - main - INFO - VKBot: инициализация…
+2025-06-07 03:28:56 - main - INFO - VKBot: инициализирован.
+2025-06-07 03:28:56 - main - INFO - VKBot: запускается (Long Poll)…
+2025-06-07 03:28:56 - main - INFO - MAIN_APP_ENTRY: VKBot запущен
+2025-06-07 03:28:56 - main - INFO - TelegramBot: инициализация…
+2025-06-07 03:28:56 - main - INFO - VKBot: Long Poll запущен. Ожидаем событий…
+2025-06-07 03:28:57 - main - INFO - TelegramBot: инициализирован, хендлеры добавлены.
+2025-06-07 03:28:57 - main - INFO - MAIN_APP_ENTRY: TelegramBot запущен
+2025-06-07 03:28:58 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getMe "HTTP/1.1 200 OK"
+2025-06-07 03:28:58 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/deleteWebhook "HTTP/1.1 200 OK"
+2025-06-07 03:28:58 - telegram.ext.Application - INFO - Application started
+2025-06-07 03:29:08 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 03:29:18 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 03:29:18 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 03:29:20 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/sendMessage "HTTP/1.1 200 OK"
+2025-06-07 03:29:29 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 03:29:35 - main - INFO - MAIN_APP_ENTRY: Останавливаем TelegramBot
+2025-06-07 03:29:35 - main - INFO - MAIN_APP_ENTRY: Останавливаем VKBot
+2025-06-07 03:29:35 - main - INFO - VKBot: получен сигнал на остановку
+2025-06-07 03:29:35 - main - INFO - MAIN_APP_ENTRY: Сигналы остановки отправлены для обоих ботов
+2025-06-07 03:29:39 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 03:29:46 - main - INFO - VKBot: остановлен.
+2025-06-07 03:29:50 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 03:30:00 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 03:30:10 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 03:30:20 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 03:30:30 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"

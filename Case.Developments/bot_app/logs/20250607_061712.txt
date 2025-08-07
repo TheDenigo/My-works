@@ -1,0 +1,18 @@
+2025-06-07 06:17:15 - main - INFO - VKBot: инициализация…
+2025-06-07 06:17:15 - main - INFO - VKBot: инициализирован.
+2025-06-07 06:17:15 - main - INFO - VKBot: Long Poll старт…
+2025-06-07 06:17:15 - main - INFO - MAIN_APP: VKBot запущен
+2025-06-07 06:17:15 - main - INFO - TelegramBot: инициализация…
+2025-06-07 06:17:16 - main - INFO - TelegramBot: хендлеры добавлены
+2025-06-07 06:17:16 - main - INFO - MAIN_APP: TelegramBot запущен
+2025-06-07 06:17:16 - main - INFO - TelegramBot: запускаем polling…
+2025-06-07 06:17:17 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getMe "HTTP/1.1 200 OK"
+2025-06-07 06:17:17 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/deleteWebhook "HTTP/1.1 200 OK"
+2025-06-07 06:17:17 - telegram.ext.Application - INFO - Application started
+2025-06-07 06:17:26 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/getUpdates "HTTP/1.1 200 OK"
+2025-06-07 06:17:27 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7649614124:AAFyK56ESGm79ivpMd-kyXjFPmb7fQNyM-w/sendMessage "HTTP/1.1 200 OK"
+2025-06-07 06:17:30 - main - INFO - MAIN_APP: посылаем сигнал остановки обоим ботам…
+2025-06-07 06:17:30 - main - INFO - TelegramBot: stop() через loop.call_soon_threadsafe
+2025-06-07 06:17:30 - main - INFO - VKBot: получен сигнал остановки
+2025-06-07 06:17:40 - main - INFO - VKBot: остановлен.
+2025-06-07 06:17:40 - main - INFO - MAIN_APP: оба бота остановлены
