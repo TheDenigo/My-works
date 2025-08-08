@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.remote.webdriver import WebDriver
 import time
-import getpass  # Для безопасного ввода пароля
+import getpass
 
 def analyze_website(driver: WebDriver, url: str):
     """Анализирует веб-сайт и возвращает отчет о его функциональности."""
@@ -67,7 +67,7 @@ def analyze_forms(driver: WebDriver, forms):
     print(f"Найдено форм: {len(forms)}") # Лог
     for form in forms:
         try:
-            form_name = form.get_attribute("name") or "Unnamed Form" # Получаем имя формы
+            form_name = form.get_attribute("name") or "Unnamed Form"
             print(f"Анализируем форму: {form_name}") # Лог
             results[form_name] = analyze_form(driver, form)
         except Exception as e:
@@ -82,7 +82,7 @@ def analyze_form(driver: WebDriver, form):
         input_types = [input.get_attribute("type") for input in inputs]
         print(f"Типы полей формы: {input_types}") # Лог
 
-        if "password" in input_types and ("email" in input_types or "text" in input_types):  # Вероятно, форма авторизации
+        if "password" in input_types and ("email" in input_types or "text" in input_types):
             print("Обнаружена форма авторизации!")
             return handle_login_form(driver, form)
         else:
@@ -104,11 +104,9 @@ def handle_login_form(driver: WebDriver, form):
         # Логируем атрибуты формы
         print(f"Атрибуты формы: {form.get_attribute('outerHTML')}")
 
-        # Попробуем найти поля по разным селекторам и залогируем, что нашли
         username_field = None
         password_field = None
 
-        #  Измененные селекторы на основе предположения об id полей
         try:
             username_field = form.find_element(By.ID, "user-name")
             print("Найдено поле username по ID: user-name") # Лог
@@ -155,10 +153,8 @@ def handle_login_form(driver: WebDriver, form):
         submit_button = form.find_element(By.CSS_SELECTOR, "input[type='submit'], button[type='submit']")
         submit_button.click()
 
-        # Даем время на загрузку страницы после авторизации (можно увеличить)
         time.sleep(5)
 
-        # Проверяем, успешно ли прошла авторизация (пример)
         if "ошибка" in driver.page_source.lower() or "failed" in driver.page_source.lower(): # Проверяем наличие слов "ошибка" или "failed" на странице
             return "Авторизация не удалась."
         else:
@@ -171,7 +167,6 @@ def handle_login_form(driver: WebDriver, form):
 def check_normal_form(driver: WebDriver, form):
   """Проверяет обычную форму (простой пример)."""
   try:
-    # Заполняем первое текстовое поле формы (если есть)
     inputs = form.find_elements(By.TAG_NAME, "input")
     text_inputs = [i for i in inputs if i.get_attribute('type') == 'text']
     if text_inputs:
@@ -182,7 +177,7 @@ def check_normal_form(driver: WebDriver, form):
     if submit_buttons:
       submit_buttons[0].click()
       time.sleep(2)
-      driver.back() # Возвращаемся
+      driver.back()
       return "Форма отправлена."
     else:
       return "Нет кнопки Submit."
@@ -192,7 +187,6 @@ def check_normal_form(driver: WebDriver, form):
     return f"Ошибка: {e}"
 
 if __name__ == "__main__":
-    # Запрашиваем URL у пользователя
     url = input("Введите URL сайта для анализа: ")
 
     options = webdriver.ChromeOptions()
@@ -217,5 +211,6 @@ if __name__ == "__main__":
             print(f"  {form_name}: {result}")
     else:
         print("Анализ не удался.")
+
 
     driver.quit()
