@@ -9,40 +9,31 @@ import time
 driver = webdriver.Chrome()
 
 try:
-    # Шаг 1: Авторизация
     print("-----------------------")
     print("Этап авторизации")
     
-    # 1. Открываем сайт
     driver.get("https://www.saucedemo.com/")
     
-    # 2. Находим поле для ввода имени пользователя
     username_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, "user-name"))
     )
     
-    # 3. Вводим имя пользователя
     username_field.send_keys("standard_user")
     
-    # 4. Находим поле для ввода пароля
     password_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, "password"))
     )
     
-    # 5. Вводим пароль
     password_field.send_keys("secret_sauce")
     
-    # 6. Нажимаем Enter для авторизации
     password_field.send_keys(Keys.RETURN)
     
-    # 7. Ожидаем, что перешли на страницу с товарами (можно ожидать появления любого характерного элемента)
     WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CLASS_NAME, "inventory_list"))
     )
     
     print("Успешная авторизация!")
 
-    # Шаг 2: Получение списка товаров и выбор товара
     print("-----------------------")
     print("Этап выбора товара")
     
@@ -61,10 +52,8 @@ try:
 
     def scroll_page():
         """Прокручивает страницу вниз и вверх для загрузки всех элементов"""
-        # Прокручиваем вниз
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(2)
-        # Прокручиваем вверх
         driver.execute_script("window.scrollTo(0, 0);")
         time.sleep(2)
 
@@ -103,7 +92,6 @@ try:
             print("Вы не выбрали ни одного товара.")
             return False
             
-        # Добавляем выбранные товары в корзину
         inventory_items = driver.find_elements(By.CLASS_NAME, "inventory_item")
         for product_name in chosen_products:
               for item in inventory_items:
@@ -124,7 +112,6 @@ try:
         exit()
     
 
-    # Шаг 3: Проверка и переход в корзину
     print("-----------------------")
     print("Этап перехода в корзину")
     
@@ -155,7 +142,6 @@ try:
         driver.quit()
         exit()
     
-    # Шаг 4: Просмотр товаров в корзине и их подтверждение
     print("-----------------------")
     print("Этап просмотра корзины")
     
@@ -230,7 +216,6 @@ try:
         driver.quit()
         exit()
     
-    # Шаг 5: Ввод данных и подтверждение заказа
     print("-----------------------")
     print("Этап оформления заказа")
     
@@ -285,13 +270,11 @@ try:
         driver.quit()
         exit()
     
-    # Шаг 6: Подтверждение заказа и финиш
     print("-----------------------")
     print("Этап подтверждения и завершения заказа")
     
     def confirm_order():
             try:
-                # Прокручиваем страницу вниз, потом вверх для загрузки элементов
                 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 time.sleep(2)
                 driver.execute_script("window.scrollTo(0, 0);")
@@ -363,4 +346,5 @@ except TimeoutException as e:
 except Exception as e:
     print("Произошла непредвиденная ошибка", e)
 finally:
+
     driver.quit()
